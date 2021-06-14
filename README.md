@@ -4,10 +4,12 @@ Pour le samedi 19/06 à 20h00, déposer sur GitHub Classroom votre travail aprè
 
 Votre projet doit contenir deux dossiers :
 
-1. le dossier `back` dans lequel est l’API,
-1. le dossier `front` dans lequel est votre front.
+1. le dossier `back/` dans lequel est l’API,
+1. le dossier `front/` dans lequel est votre front.
 
-Merci de m’indiquer dans un `README.md` les commandes à lancer pour le `front`.
+L’API sera lancée sur `http://localhost:3000/` et le _front_, lancé sur `http://localhost:3001/` consommera cette API sur `http://localhost:3000/`
+
+Merci de m’indiquer dans un `README.md` les commandes à lancer pour le _front_.
 
 Vous pouvez utiliser l’API disponible sur GitHub : [https://github.com/centvingt/votes-nodejs-mongodb](https://github.com/centvingt/votes-nodejs-mongodb). Dans ce cas :
 
