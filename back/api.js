@@ -27,6 +27,16 @@ db.once('open', () => console.log('CONNECTED TO MONGO-DB'))
 app.use(helmet())
 app.use(express.json())
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  )
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE')
+  next()
+})
+
 app.use('/auth/', authRouter) //Route auth
 app.use('/admin/', authAdmin, adminRouter) //Route admin
 app.use('/vote/', voteRouter) //Route vote
